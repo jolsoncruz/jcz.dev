@@ -12,7 +12,7 @@ import {
 const Maintenance = () => {
   return (
     <>
-      <div className="flex h-screen items-center justify-center bg-slate-100">
+      <div className="flex h-screen items-start justify-center bg-slate-100 pt-24">
         <Card className="mx-10 lg:w-1/2">
           <CardHeader className="flex flex-row space-x-2">
             <img className="max-h-16 max-w-16" src={avatarUrl} />
