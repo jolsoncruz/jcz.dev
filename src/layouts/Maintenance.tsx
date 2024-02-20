@@ -37,7 +37,7 @@ const Maintenance = () => {
             </p>
           </CardContent>
           <CardFooter className="border-t pt-4 text-sm text-zinc-500">
-            <div className="w-full lg:flex lg:justify-between">
+            <div className="flex w-full sm:flex-col lg:flex-row lg:justify-between">
               <div className="sm:pb space-x-4">
                 <a
                   href="https://x.com/jolsoncruz"
@@ -58,7 +58,7 @@ const Maintenance = () => {
                   LinkedIn
                 </a>
               </div>
-              <span>Copyright 2024 - jcz.dev</span>
+              <span className="sm:pt-1">Copyright 2024 - jcz.dev</span>
             </div>
           </CardFooter>
         </Card>
