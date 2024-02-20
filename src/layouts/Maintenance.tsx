@@ -36,8 +36,8 @@ const Maintenance = () => {
               media channels to get notified when it's ready for the world! 🌍
             </p>
           </CardContent>
-          <CardFooter className="border-t pt-4 text-sm text-zinc-500">
-            <div className="flex w-full sm:flex-col lg:flex-row lg:justify-between">
+          <CardFooter className="border-t py-4 text-sm text-zinc-500">
+            <div className="flex w-full flex-col lg:flex-row lg:justify-between">
               <div className="sm:pb space-x-4">
                 <a
                   href="https://x.com/jolsoncruz"
