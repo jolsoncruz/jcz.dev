@@ -1,10 +1,9 @@
-import React from "react";
 import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
     <>
-      <div className="space-y-10 max-w-6xl mx-auto px-5 py-32">
+      <div className="mx-auto max-w-6xl space-y-10 px-5 py-32">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ipsa
           impedit voluptatibus animi, iste nostrum laboriosam? Nostrum eveniet
