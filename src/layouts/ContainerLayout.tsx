@@ -7,9 +7,7 @@ const ContainerLayout = () => {
   return (
     <>
     <Navbar />
-    <div className='max-w-6xl mx-auto px-5 py-32'>
-      <Outlet />
-    </div>
+    <Outlet />
     <Footer />
     </>
   )
