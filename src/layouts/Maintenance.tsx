@@ -1,3 +1,5 @@
+import avatarUrl from "../assets/avatar.png";
+
 import {
   Card,
   CardContent,
@@ -13,7 +15,7 @@ const Maintenance = () => {
       <div className="flex h-screen items-center justify-center bg-slate-100">
         <Card className="mx-10 lg:w-1/2">
           <CardHeader className="flex flex-row space-x-2">
-            <img className="max-h-16 max-w-16" src="src/assets/avatar.png" />
+            <img className="max-h-16 max-w-16" src={avatarUrl} />
             <div className="flex flex-col">
               <CardTitle className="text-3xl">Jolson Cruz</CardTitle>
               <CardDescription className="font-mono">
