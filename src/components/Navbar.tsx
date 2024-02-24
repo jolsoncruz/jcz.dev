@@ -13,12 +13,22 @@ const Navbar = () => {
                 jcz.dev
               </a>
             </div>
-            <div className="space-x-5">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Projects</a>
-              <a href="#">CV</a>
-              <a href="#">Contact</a>
+            <div className="space-x-5 text-zinc-400">
+              <a href="#" className="font-semibold text-teal-900">
+                Home
+              </a>
+              <a href="#" className="hover:text-teal-800">
+                About ↗
+              </a>
+              <a href="#" className="hover:text-teal-800">
+                Projects ↗
+              </a>
+              <a href="#" className="hover:text-teal-800">
+                CV ↗
+              </a>
+              <a href="#" className="hover:text-teal-800">
+                Contact ↗
+              </a>
             </div>
           </div>
         </div>
