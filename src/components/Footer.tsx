@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -16,40 +18,40 @@ const Footer = () => {
             <div className="flex w-1/3 justify-end space-x-40 px-2">
               <div>
                 <h6 className="pb-2 text-lg font-semibold">Pages</h6>
-                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 underline-offset-8">
-                  <a className="hover:underline active:underline" href="/">
+                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 decoration-teal-800 underline-offset-8">
+                  <Link to="/" className="hover:underline">
                     Home
-                  </a>
-                  <a className="hover:underline active:underline" href="#">
+                  </Link>
+                  <Link to="/about" className="hover:underline">
                     About
-                  </a>
-                  <a className="hover:underline active:underline" href="#">
+                  </Link>
+                  <Link to="/projects" className="hover:underline">
                     Projects
-                  </a>
-                  <a className="hover:underline active:underline" href="#">
+                  </Link>
+                  <a className="hover:underline" href="https://example.com">
                     CV
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <Link to="/contact" className="hover:underline">
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div>
                 <h6 className="pb-2 text-xl font-semibold">Connect</h6>
-                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 underline-offset-4">
-                  <a className="hover:underline active:underline" href="#">
+                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 decoration-teal-800 underline-offset-8">
+                  <a className="hover:underline" href="#">
                     Email
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a className="hover:underline" href="#">
                     GitHub
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a className="hover:underline" href="#">
                     LinkedIn
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a className="hover:underline" href="#">
                     Instagram
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a className="hover:underline" href="#">
                     X
                   </a>
                 </div>
@@ -57,9 +59,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex h-36 items-center justify-between border-t border-dashed text-sm">
-            <div className="space-x-14 text-zinc-400">
-              <a href="#">Imprint</a>
-              <a href="#">Privacy Policy</a>
+            <div className="space-x-14 text-zinc-400 decoration-inherit underline-offset-8">
+              <a href="#" className="hover:underline">
+                Imprint
+              </a>
+              <a href="#" className="hover:underline">
+                Privacy Policy
+              </a>
             </div>
             <div className="space-x-20">
               <span>Copyright © jcz.dev 2024</span>

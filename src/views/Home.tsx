@@ -1,6 +1,5 @@
-import Hero from "@/components/Hero";
-import Newsletter from "../components/Newsletter";
-import Ticker from "@/components/Ticker";
+import { Hero, Ticker } from "@/components";
+import Newsletter from "@/components/Newsletter";
 
 const Home = () => {
   return (

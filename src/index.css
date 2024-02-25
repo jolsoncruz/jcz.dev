@@ -75,3 +75,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .navLinkActive {
+    @apply font-semibold text-teal-900;
+  }
+  .navLinkInactive {
+    @apply hover:text-teal-800;
+  }
+}

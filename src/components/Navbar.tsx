@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
@@ -14,21 +16,41 @@ const Navbar = () => {
               </a>
             </div>
             <div className="space-x-5 text-zinc-400">
-              <a href="#" className="font-semibold text-teal-900">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
                 Home
-              </a>
-              <a href="#" className="hover:text-teal-800">
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
                 About ↗
-              </a>
-              <a href="#" className="hover:text-teal-800">
+              </NavLink>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
                 Projects ↗
-              </a>
-              <a href="#" className="hover:text-teal-800">
+              </NavLink>
+              <a href="https://example.com" className="navLinkInactive">
                 CV ↗
               </a>
-              <a href="#" className="hover:text-teal-800">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
                 Contact ↗
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
