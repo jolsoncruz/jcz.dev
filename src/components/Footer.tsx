@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -39,19 +39,34 @@ const Footer = () => {
               <div>
                 <h6 className="pb-2 text-xl font-semibold">Connect</h6>
                 <div className="flex flex-col space-y-3 pt-2 text-zinc-400 decoration-teal-800 underline-offset-8">
-                  <a className="hover:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="mailto:me@jolsoncruz.com"
+                  >
                     Email
                   </a>
-                  <a className="hover:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://github.com/jolsoncruz"
+                  >
                     GitHub
                   </a>
-                  <a className="hover:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://www.linkedin.com/in/jolsoncruz/"
+                  >
                     LinkedIn
                   </a>
-                  <a className="hover:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://www.instagram.com/jolsoncruz"
+                  >
                     Instagram
                   </a>
-                  <a className="hover:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://twitter.com/jolsoncruz"
+                  >
                     X
                   </a>
                 </div>
