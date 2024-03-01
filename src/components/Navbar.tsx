@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <nav className="sticky top-0 z-10 border-b border-gray-200 bg-slate-100 bg-opacity-30 backdrop-blur-lg backdrop-filter">
         <div className="mx-auto max-w-6xl px-5">
-          <div className="flex h-14 items-center justify-between">
+          <div className="flex items-center justify-between py-2">
             <div>
               <a href="#" className="flex items-center font-bold">
                 <img
@@ -15,7 +15,8 @@ const Navbar = () => {
                 jcz.dev
               </a>
             </div>
-            <div className="space-x-5 text-zinc-400">
+            {/* TODO: Add mobile menu */}
+            <div className="hidden md:flex md:space-x-5 md:text-zinc-400">
               <NavLink
                 to="/"
                 className={({ isActive }) =>

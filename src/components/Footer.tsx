@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <>
       <nav className="border-t border-gray-200 bg-white">
-        <div className="mx-auto max-w-6xl px-5">
-          <div className="flex h-[23rem] items-start justify-between bg-white pt-20">
-            <div className="w-2/3">
-              <img src="src/assets/avatar.png" className="max-h-12 pr-2" />
+        <div className="px-10 md:mx-auto md:max-w-6xl md:px-8">
+          <div className="pt-20 md:flex md:items-start md:justify-between md:pb-20">
+            <div className="md:w-2/3">
+              <img src="src/assets/avatar.png" className="max-h-12" />
               <h1 className="pt-2 text-2xl font-bold">
                 Jolson's Personal Site
               </h1>
@@ -15,9 +15,9 @@ const Footer = () => {
                 Software Developer
               </h2>
             </div>
-            <div className="flex w-1/3 justify-end space-x-40 px-2">
+            <div className="flex space-x-28 py-14 md:w-1/3 md:justify-end md:space-x-40 md:px-2 md:py-0">
               <div>
-                <h6 className="pb-2 text-lg font-semibold">Pages</h6>
+                <h6 className="pb-2 text-xl font-semibold">Pages</h6>
                 <div className="flex flex-col space-y-3 pt-2 text-zinc-400 decoration-teal-800 underline-offset-8">
                   <Link to="/" className="hover:underline">
                     Home
@@ -73,8 +73,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex h-36 items-center justify-between border-t border-dashed text-sm">
-            <div className="space-x-14 text-zinc-400 decoration-inherit underline-offset-8">
+          <div className="border-t border-dashed py-14 md:flex md:justify-between md:text-xs">
+            <div className="flex flex-col space-y-2 pb-8 text-zinc-400 decoration-inherit underline-offset-8 md:flex-row md:space-x-14 md:space-y-0 md:pb-0">
               <a href="#" className="hover:underline">
                 Imprint
               </a>
@@ -82,9 +82,7 @@ const Footer = () => {
                 Privacy Policy
               </a>
             </div>
-            <div className="space-x-20">
-              <span>Copyright © jcz.dev 2024</span>
-            </div>
+            <span className="text-xs">Copyright © jcz.dev 2024</span>
           </div>
         </div>
       </nav>
