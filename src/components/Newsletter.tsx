@@ -16,7 +16,10 @@ const Newsletter = () => {
           spam you; I'll only drop a line when I have something useful to share.
         </p>
         <div className="mt-10 flex -space-x-12 font-medium">
-          <Input placeholder="hi@jcz.dev" className="h-14 rounded-full px-8" />
+          <Input
+            placeholder="hi@jcz.dev"
+            className="h-14 rounded-full px-8 focus:outline-0"
+          />
           <Button className="h-14 w-14 rounded-full bg-slate-500 hover:bg-slate-700">
             {">"}
           </Button>

@@ -74,15 +74,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t border-dashed py-14 md:flex md:justify-between md:text-xs">
-            <div className="flex flex-col space-y-2 pb-8 text-zinc-400 decoration-inherit underline-offset-8 md:flex-row md:space-x-14 md:space-y-0 md:pb-0">
-              <a href="#" className="hover:underline">
-                Imprint
-              </a>
-              <a href="#" className="hover:underline">
-                Privacy Policy
-              </a>
-            </div>
-            <span className="text-xs">Copyright © jcz.dev 2024</span>
+            <span className="text-xs text-zinc-400">
+              Copyright © jcz.dev 2024
+            </span>
           </div>
         </div>
       </nav>

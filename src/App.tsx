@@ -1,11 +1,13 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ContainerLayout from "./layouts/ContainerLayout";
 import { Home, About, Projects, Contact } from "./views";
+import ScrollToTop from "./components/ScrollToTop";
 // import Maintenance from "./layouts/Maintenance";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<ContainerLayout />}>
           <Route index element={<Home />} />
