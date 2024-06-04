@@ -41,7 +41,10 @@ const Navbar = () => {
               >
                 Projects ↗
               </NavLink>
-              <a href="https://example.com" className="navLinkInactive">
+              <a
+                href="src/assets/JolsonCruz_0524-FE.pdf"
+                className="navLinkInactive"
+              >
                 CV ↗
               </a>
               <NavLink

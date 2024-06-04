@@ -11,7 +11,7 @@ const Hero = () => {
         />
         <h1 className="pt-3 tracking-wider">Hello, I'm</h1>
         <h1 className="text-7xl font-bold tracking-tighter">Jolson Cruz</h1>
-        <h2 className="animate-typing-blink border-r-4 border-r-teal-700 pr-1 font-mono text-xl tracking-tighter md:pr-3 md:text-4xl ">
+        <h2 className="animate-typing-blink border-r-4 border-r-jelly-bean-700 pr-1 font-mono text-xl tracking-tighter md:pr-3 md:text-4xl ">
           Full-Stack Software Developer
         </h2>
       </div>

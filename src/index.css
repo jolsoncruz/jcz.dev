@@ -78,9 +78,9 @@
 
 @layer utilities {
   .navLinkActive {
-    @apply font-semibold text-teal-900;
+    @apply font-semibold text-jelly-bean-900;
   }
   .navLinkInactive {
-    @apply hover:text-teal-800;
+    @apply hover:text-jelly-bean-800;
   }
 }
