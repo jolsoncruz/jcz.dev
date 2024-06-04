@@ -1,9 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
       <nav className="sticky top-0 z-10 border-b border-gray-200 bg-slate-100 bg-opacity-30 backdrop-blur-lg backdrop-filter">
         <div className="mx-auto max-w-6xl px-5">
-          <div className="flex h-14 items-center justify-between">
+          <div className="flex items-center justify-between py-2">
             <div>
               <a href="#" className="flex items-center font-bold">
                 <img
@@ -13,12 +15,46 @@ const Navbar = () => {
                 jcz.dev
               </a>
             </div>
-            <div className="space-x-5">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Projects</a>
-              <a href="#">CV</a>
-              <a href="#">Contact</a>
+            {/* TODO: Add mobile menu */}
+            <div className="hidden md:flex md:space-x-5 md:text-zinc-400">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
+                About ↗
+              </NavLink>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
+                Projects ↗
+              </NavLink>
+              <a
+                href="src/assets/JolsonCruz_0524-FE.pdf"
+                className="navLinkInactive"
+              >
+                CV ↗
+              </a>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "navLinkActive" : "navLinkInactive"
+                }
+              >
+                Contact ↗
+              </NavLink>
             </div>
           </div>
         </div>

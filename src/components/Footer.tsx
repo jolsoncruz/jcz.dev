@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
       <nav className="border-t border-gray-200 bg-white">
-        <div className="mx-auto max-w-6xl px-5">
-          <div className="flex h-[23rem] items-start justify-between bg-white pt-20">
-            <div className="w-2/3">
-              <img src="src/assets/avatar.png" className="max-h-12 pr-2" />
+        <div className="px-10 md:mx-auto md:max-w-6xl md:px-8">
+          <div className="pt-20 md:flex md:items-start md:justify-between md:pb-20">
+            <div className="md:w-2/3">
+              <img src="src/assets/avatar.png" className="max-h-12" />
               <h1 className="pt-2 text-2xl font-bold">
                 Jolson's Personal Site
               </h1>
@@ -13,57 +15,68 @@ const Footer = () => {
                 Software Developer
               </h2>
             </div>
-            <div className="flex w-1/3 justify-end space-x-40 px-2">
+            <div className="flex space-x-28 py-14 md:w-1/3 md:justify-end md:space-x-40 md:px-2 md:py-0">
               <div>
-                <h6 className="pb-2 text-lg font-semibold">Pages</h6>
-                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 underline-offset-8">
-                  <a className="hover:underline active:underline" href="/">
+                <h6 className="pb-2 text-xl font-semibold">Pages</h6>
+                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 decoration-teal-800 underline-offset-8">
+                  <Link to="/" className="hover:underline">
                     Home
-                  </a>
-                  <a className="hover:underline active:underline" href="#">
+                  </Link>
+                  <Link to="/about" className="hover:underline">
                     About
-                  </a>
-                  <a className="hover:underline active:underline" href="#">
+                  </Link>
+                  <Link to="/projects" className="hover:underline">
                     Projects
-                  </a>
-                  <a className="hover:underline active:underline" href="#">
+                  </Link>
+                  <a className="hover:underline" href="https://example.com">
                     CV
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <Link to="/contact" className="hover:underline">
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div>
                 <h6 className="pb-2 text-xl font-semibold">Connect</h6>
-                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 underline-offset-4">
-                  <a className="hover:underline active:underline" href="#">
+                <div className="flex flex-col space-y-3 pt-2 text-zinc-400 decoration-teal-800 underline-offset-8">
+                  <a
+                    className="hover:underline"
+                    href="mailto:me@jolsoncruz.com"
+                  >
                     Email
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://github.com/jolsoncruz"
+                  >
                     GitHub
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://www.linkedin.com/in/jolsoncruz/"
+                  >
                     LinkedIn
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://www.instagram.com/jolsoncruz"
+                  >
                     Instagram
                   </a>
-                  <a className="hover:underline active:underline" href="#">
+                  <a
+                    className="hover:underline"
+                    href="https://twitter.com/jolsoncruz"
+                  >
                     X
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex h-36 items-center justify-between border-t border-dashed text-sm">
-            <div className="space-x-14 text-zinc-400">
-              <a href="#">Imprint</a>
-              <a href="#">Privacy Policy</a>
-            </div>
-            <div className="space-x-20">
-              <span>Copyright © jcz.dev 2024</span>
-            </div>
+          <div className="border-t border-dashed py-14 md:flex md:justify-between md:text-xs">
+            <span className="text-xs text-zinc-400">
+              Copyright © jcz.dev 2024
+            </span>
           </div>
         </div>
       </nav>
