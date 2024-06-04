@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="mx-auto max-w-6xl px-5">
           <div className="flex items-center justify-between py-2">
             <div>
-              <a href="#" className="flex items-center font-bold">
+              <a href="/" className="flex items-center font-bold">
                 <img src="/avatar.png" className="h-auto max-h-10 pr-2" />
                 jcz.dev
               </a>
