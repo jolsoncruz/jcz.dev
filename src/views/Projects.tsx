@@ -5,8 +5,8 @@ const Projects = () => {
       description:
         "Winner of HackDIRO Université de Montreal. A never-ending fantasy world role-playing game (RPG) that is personalized to you and your interests. Powered by Artificial Intelligence.",
       imageSrc: "/diro.gif",
-      demoLink: "https://diro-world.vercel.app/",
-      gitLink: "https://github.com/aryanxarora/diro-world",
+      demoLink: "https://diro-world-jcz.vercel.app/",
+      gitLink: "https://github.com/jolsoncruz/Diro-World-JCZ",
       articleLink:
         "https://www.vaniercollege.qc.ca/newsroom/vanier-students-win-at-udm-hackathon-du-diro/",
     },
