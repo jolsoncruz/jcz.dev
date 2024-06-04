@@ -8,10 +8,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between py-2">
             <div>
               <a href="#" className="flex items-center font-bold">
-                <img
-                  src="src/assets/avatar.png"
-                  className="h-auto max-h-10 pr-2"
-                />
+                <img src="/avatar.png" className="h-auto max-h-10 pr-2" />
                 jcz.dev
               </a>
             </div>
@@ -41,10 +38,7 @@ const Navbar = () => {
               >
                 Projects ↗
               </NavLink>
-              <a
-                href="src/assets/JolsonCruz_0524-FE.pdf"
-                className="navLinkInactive"
-              >
+              <a href="/JolsonCruz_0524-FE.pdf" className="navLinkInactive">
                 CV ↗
               </a>
               <NavLink

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="px-10 md:mx-auto md:max-w-6xl md:px-8">
           <div className="pt-20 md:flex md:items-start md:justify-between md:pb-20">
             <div className="md:w-2/3">
-              <img src="src/assets/avatar.png" className="max-h-12" />
+              <img src="/avatar.png" className="max-h-12" />
               <h1 className="pt-2 text-2xl font-bold">
                 Jolson's Personal Site
               </h1>

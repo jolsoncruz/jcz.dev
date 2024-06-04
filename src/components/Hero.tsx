@@ -5,7 +5,7 @@ const Hero = () => {
       {/* NOTE: probably increase the py? */}
       <div className="mx-6xl flex flex-col items-center bg-slate-100 px-5 py-20">
         <img
-          src="src/assets/avatar.png"
+          src="/avatar.png"
           alt="Jolson Cruz"
           className="h-40 w-40 drop-shadow-sm"
         />

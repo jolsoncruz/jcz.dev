@@ -4,7 +4,7 @@ const Projects = () => {
       title: "Diro's World",
       description:
         "Winner of HackDIRO Université de Montreal. A never-ending fantasy world role-playing game (RPG) that is personalized to you and your interests. Powered by Artificial Intelligence.",
-      imageSrc: "src/assets/diro.gif",
+      imageSrc: "/diro.gif",
       demoLink: "https://diro-world.vercel.app/",
       gitLink: "https://github.com/aryanxarora/diro-world",
       articleLink:
@@ -14,7 +14,7 @@ const Projects = () => {
       title: "HeyU",
       description:
         "A university-exclusive social media platform, inspired by Instagram, promoting a fun and inclusive environment for students to connect, network, and engage in relatable conversations.",
-      imageSrc: "src/assets/heyu.png",
+      imageSrc: "/heyu.png",
       demoLink: "https://heyu-jcz.vercel.app",
       gitLink: "https://github.com/jolsoncruz/heyu-socmed-app",
     },
@@ -22,7 +22,7 @@ const Projects = () => {
       title: "Mobility Invoicing",
       description:
         "Billing and invoicing app created for companies like Bell and Rogers to manage customer plans and payments.",
-      imageSrc: "src/assets/mobinvoicing.png",
+      imageSrc: "/mobinvoicing.png",
       demoLink: "https://mobility-invoicing.vercel.app/",
       gitLink: "https://github.com/jolsoncruz/mobility-invoicing",
     },
@@ -30,7 +30,7 @@ const Projects = () => {
       title: "DLSU Community Forum",
       description:
         "Engaging community forum designed for De La Salle University (DLSU) students to gain insights about professors before enrolling in their classes.",
-      imageSrc: "src/assets/commforum.png",
+      imageSrc: "/commforum.png",
       demoLink: "https://dlsu-commforum.onrender.com/",
       gitLink: "https://github.com/jolsoncruz/DLSU-Community-Forum",
     },
