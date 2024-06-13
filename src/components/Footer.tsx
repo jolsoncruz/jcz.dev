@@ -8,9 +8,7 @@ const Footer = () => {
           <div className="pt-20 md:flex md:items-start md:justify-between md:pb-20">
             <div className="md:w-2/3">
               <img src="/avatar.png" className="max-h-12" />
-              <h1 className="pt-2 text-2xl font-bold">
-                Jolson's Personal Site
-              </h1>
+              <h1 className="pt-2 text-2xl font-bold">Jolson Cruz</h1>
               <h2 className="text-md font-mono font-medium">
                 Software Developer
               </h2>

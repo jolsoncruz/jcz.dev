@@ -83,4 +83,13 @@
   .navLinkInactive {
     @apply hover:text-jelly-bean-800;
   }
+  .glassify {
+    @apply bg-slate-100 bg-opacity-30 backdrop-blur-lg;
+  }
+  .cardButton {
+    @apply content-center overflow-hidden whitespace-nowrap rounded-xl bg-slate-100 px-3 py-1 text-sm font-light outline outline-1 outline-slate-200 transition duration-200 ease-in-out hover:bg-jelly-bean-400 hover:text-white;
+  }
+  .formField {
+    @apply mb-4 w-full rounded-md border bg-slate-100 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-jelly-bean-400;
+  }
 }

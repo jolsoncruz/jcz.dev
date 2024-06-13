@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-10 border-b border-gray-200 bg-slate-100 bg-opacity-30 backdrop-blur-lg backdrop-filter">
+      <nav className="glassify sticky top-0 z-10 border-b border-gray-200 bg-slate-100">
         <div className="mx-auto max-w-6xl px-5">
           <div className="flex items-center justify-between py-2">
             <div>

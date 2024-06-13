@@ -6,7 +6,11 @@ const ContainerLayout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <div className="bg-zinc-50 px-7 py-32">
+        <div className="mx-auto max-w-6xl">
+          <Outlet />
+        </div>
+      </div>
       <Footer />
     </>
   );
