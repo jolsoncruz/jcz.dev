@@ -12,7 +12,7 @@ const Navbar = () => {
             <div>
               <a href="/" className="flex items-center font-bold">
                 <img src="/avatar.png" className="h-auto max-h-10 pr-2" />
-                jcz.dev
+                Jolson Cruz
               </a>
             </div>
 
