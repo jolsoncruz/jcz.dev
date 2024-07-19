@@ -119,7 +119,11 @@ const Navbar = () => {
               >
                 Projects ↗
               </NavLink>
-              <a href="/JolsonCruz_0524-FE.pdf" className="navLinkInactive">
+              <a
+                href="/JolsonCruz_0524-FE.pdf"
+                rel="nofollow"
+                className="navLinkInactive"
+              >
                 CV ↗
               </a>
               <NavLink
