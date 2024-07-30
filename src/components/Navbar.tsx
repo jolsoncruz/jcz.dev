@@ -120,7 +120,7 @@ const Navbar = () => {
                 Projects ↗
               </NavLink>
               <a
-                href="/JolsonCruz_0524-FE.pdf"
+                href="/JolsonCruz_Resume.pdf"
                 rel="nofollow"
                 className="navLinkInactive"
               >
