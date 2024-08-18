@@ -18,12 +18,13 @@ const Newsletter = () => {
       from_email: data.email,
     };
 
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID2;
-    const emailKey = import.meta.env.VITE_EMAILJS_API;
-
     emailjs
-      .send(serviceId, templateId, templateParams, emailKey)
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID2,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_API,
+      )
       .then(() => {
         console.log("Email sent!");
         // setResult("Thank you for reaching out! 🚀");
