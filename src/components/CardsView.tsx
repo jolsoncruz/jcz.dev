@@ -22,7 +22,7 @@ const CardsView: React.FC<CardsViewProps> = ({
             key={index}
             className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm"
           >
-            <div className="flex flex-col md:flex-row md:justify-between">
+            <div className="flex flex-col md:justify-between lg:flex-row">
               <h2 className="pb-2 text-xl font-semibold">{project.title}</h2>
               <div className="[&>a]:cardButton flex space-x-2 pb-4">
                 {project.demoLink && <a href={project.demoLink}>Live Demo</a>}

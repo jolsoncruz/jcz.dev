@@ -10,7 +10,7 @@ const Ticker = () => {
   ];
 
   return (
-    <div className="border-y border-jelly-bean-700 bg-jelly-bean-600 text-white drop-shadow-sm">
+    <div className="border-y border-jelly-bean-500 bg-jelly-bean-600 text-white drop-shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center px-5 py-10 md:px-10">
         <h1 className="overflow-hidden whitespace-nowrap pr-20 font-thin">
           Tech Stack

@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import UpArrow from "./icons/UpArrow";
 
 const Navbar = () => {
   // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -109,7 +110,7 @@ const Navbar = () => {
                   isActive ? "navLinkActive" : "navLinkInactive"
                 }
               >
-                About ↗
+                About <UpArrow className="ml-1 size-2.5 stroke-[3]" />
               </NavLink>
               <NavLink
                 to="/projects"
@@ -117,14 +118,14 @@ const Navbar = () => {
                   isActive ? "navLinkActive" : "navLinkInactive"
                 }
               >
-                Projects ↗
+                Projects <UpArrow className="ml-1 size-2.5 stroke-[3]" />
               </NavLink>
               <a
                 href="/JolsonCruz_Resume.pdf"
                 rel="nofollow"
                 className="navLinkInactive"
               >
-                CV ↗
+                CV <UpArrow className="ml-1 size-2.5 stroke-[3]" />
               </a>
               <NavLink
                 to="/contact"
@@ -132,7 +133,7 @@ const Navbar = () => {
                   isActive ? "navLinkActive" : "navLinkInactive"
                 }
               >
-                Contact ↗
+                Contact <UpArrow className="ml-1 size-2.5 stroke-[3]" />
               </NavLink>
             </div>
           </div>

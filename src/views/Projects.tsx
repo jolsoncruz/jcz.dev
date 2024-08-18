@@ -1,4 +1,5 @@
 import { CardsView } from "@/components";
+import UpArrow from "@/components/icons/UpArrow";
 
 const Projects = () => {
   return (
@@ -8,7 +9,7 @@ const Projects = () => {
           Projects
         </h1>
         <a className="cardButton" href="https://github.com/jolsoncruz">
-          Follow me on GitHub ↗
+          Follow me on GitHub <UpArrow className="ml-1 size-3 stroke-[2]" />
         </a>
       </div>
     </CardsView>

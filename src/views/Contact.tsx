@@ -1,38 +1,49 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const [result, setResult] = useState("");
 
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  const { register, handleSubmit, reset } = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = (data: any) => {
+    const templateParams = {
+      from_name: data.name,
+      from_email: data.email,
+      message: data.message,
+    };
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_API,
+      )
+      .then(() => {
+        console.log("Email sent!");
+        setResult("Thank you for reaching out! 🚀");
+        setTimeout(() => setResult(""), 3000);
+        reset();
+      })
+      .catch((error) => {
+        console.log("Error sending email:", error);
+        setResult("Error sending email. Please try again later.");
+        setTimeout(() => setResult(""), 3000);
+        console.log(import.meta.env.VITE_EMAILJS_API);
+      });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    try {
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-      setResult("Thank you for reaching out! 🚀");
-    } catch (error) {
-      console.log(error);
-      setResult("Error sending message!");
-    }
-    console.log(formData);
+  const onError = () => {
+    setResult("Please fill in all the required fields.");
+    setTimeout(() => setResult(""), 3000);
   };
 
   return (
@@ -45,45 +56,32 @@ const Contact = () => {
       </div>
       <div className="mx-auto flex flex-col items-center space-y-5">
         <form
-          onSubmit={handleSubmit}
-          className="[&>input]:formField [&>textarea]:formField w-full max-w-xl"
+          onSubmit={handleSubmit(onSubmit, onError)}
+          className="[&>input]:formField [&>textarea]:formField [&>label]:formLabel w-full max-w-xl"
         >
-          <label htmlFor="name" className="mb-1 block text-sm text-gray-700">
-            Full Name
-          </label>
+          <label htmlFor={"name"}>Full Name</label>
           <input
-            type="text"
-            name="name"
             id="name"
+            type="text"
             placeholder="John Doe"
-            value={formData.name}
-            onChange={handleChange}
-            required
+            {...register("name", { required: "Name is required." })}
           />
-          <label htmlFor="email" className="mb-1 block text-sm text-gray-700">
-            Email
-          </label>
+
+          <label htmlFor={"email"}>Email</label>
           <input
-            type="email"
-            name="email"
             id="email"
+            type="email"
             placeholder="j_doe@example.com"
-            value={formData.email}
-            onChange={handleChange}
-            required
+            {...register("email", { required: "Email is required." })}
           />
-          <label htmlFor="message" className="mb-1 block text-sm text-gray-700">
-            Message
-          </label>
+
+          <label htmlFor={"message"}>Message</label>
           <textarea
-            name="message"
             id="message"
             placeholder="Hello there!"
-            value={formData.message}
-            onChange={handleChange}
-            rows={8}
-            required
+            {...register("message", { required: "Message is required." })}
           ></textarea>
+
           <button
             type="submit"
             className="w-full rounded-md bg-jelly-bean-500 py-2 text-white hover:bg-jelly-bean-600 focus:outline-none focus:ring-2 focus:ring-jelly-bean-400"

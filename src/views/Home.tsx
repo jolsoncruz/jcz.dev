@@ -7,6 +7,7 @@ import {
   Footer,
 } from "@/components";
 import About from "./About";
+import UpArrow from "@/components/icons/UpArrow";
 
 const Home = () => {
   return (
@@ -22,11 +23,8 @@ const Home = () => {
               <h1 className="text-left text-2xl font-medium text-jelly-bean-400">
                 Featured Projects
               </h1>
-              <a
-                className="border-1 content-center rounded-xl border border-slate-200 bg-slate-100 px-3 py-1 text-sm font-light transition duration-200 ease-in-out hover:bg-jelly-bean-400 hover:text-white"
-                href="/projects"
-              >
-                See More ↗
+              <a className="cardButton" href="/projects">
+                See More <UpArrow className="ml-1 size-3 stroke-[2]" />
               </a>
             </div>
           </CardsView>
