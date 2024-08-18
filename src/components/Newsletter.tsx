@@ -2,7 +2,7 @@
 // import { Input } from "./ui/input";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Newsletter = () => {
   const { register, handleSubmit, reset } = useForm({
@@ -11,7 +11,7 @@ const Newsletter = () => {
     },
   });
 
-  const [result, setResult] = useState("");
+  // const [result, setResult] = useState("");
 
   const onSubmit = (data: any) => {
     const templateParams = {
