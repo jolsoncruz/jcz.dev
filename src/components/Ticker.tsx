@@ -15,15 +15,12 @@ const Ticker = () => {
         <h1 className="overflow-hidden whitespace-nowrap pr-20 font-thin">
           Tech Stack
         </h1>
-        <div className="group relative flex overflow-hidden font-light">
-          <div className="absolute z-10 h-full w-[100px] bg-gradient-to-r from-jelly-bean-600"></div>
-          <div className="flex animate-infinite-scroll gap-12 group-hover:paused md:gap-24 [&>*]:overflow-hidden [&>*]:whitespace-nowrap">
+        <div className="group relative inline-flex overflow-hidden font-light [mask-image:linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-200px),transparent_100%)]">
+          <div className="flex animate-infinite-scroll gap-12 px-7 group-hover:paused md:gap-24 md:px-12 [&>*]:overflow-hidden [&>*]:whitespace-nowrap">
             {techStack.concat(techStack).map((tech, index) => (
               <p key={index}>{tech}</p>
             ))}
           </div>
-
-          <div className="absolute right-0 z-10 h-full w-[100px] bg-gradient-to-l from-jelly-bean-600"></div>
         </div>
       </div>
     </div>
